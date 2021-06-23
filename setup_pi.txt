@@ -1,0 +1,6 @@
+- Install Raspberry Pi OS (using Lite; Release date: May 7th 2021)
+- sudo apt-get install libportaudio0 libportaudio2 libportaudiocpp0 portaudio19-dev
+- sudo apt install libsdl2-dev
+- sudo pip3 install pyaudio
+- sudo pip3 install pygame
+
