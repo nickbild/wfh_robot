@@ -1,3 +1,6 @@
+import subprocess
+
+
 # Start up the camera in the background.
 subprocess.Popen(["python3", "image_capture_loop.py"])
 
