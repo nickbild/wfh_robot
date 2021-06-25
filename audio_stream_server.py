@@ -2,12 +2,14 @@ import pyaudio
 import socket
 import select
 import os
+import sys
 
 
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
-RATE = 16000
+RATE = sys.argv[2] # 44100
 CHUNK = 512
+PAUSEFILE = sys.argv[1] # '.audio.bot.pause'
 
 audio = pyaudio.PyAudio()
 
@@ -18,17 +20,17 @@ serversocket.listen(5)
 
 def callback(in_data, frame_count, time_info, status):
     for s in read_list[1:]:
-        if not os.path.isfile('.audio.pause'):
+        # Creating this file will halt sending data to all devices.
+        if not os.path.isfile(PAUSEFILE):
             s.send(in_data)
     return (None, pyaudio.paContinue)
 
 
-# start Recording
+# Start streaming.
 stream = audio.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK, stream_callback=callback)
-# stream.start_stream()
 
 read_list = [serversocket]
-print ("recording...")
+print ("Streaming...")
 
 try:
     while True:
@@ -45,12 +47,10 @@ try:
 except KeyboardInterrupt:
     pass
 
+print ("Finished streaming.")
 
-print ("finished recording")
-
+# Clean up.
 serversocket.close()
-# stop Recording
 stream.stop_stream()
 stream.close()
 audio.terminate()
-
