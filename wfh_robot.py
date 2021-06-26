@@ -16,10 +16,10 @@ subprocess.Popen(["python3", "image_capture_loop.py"])
 subprocess.Popen(["python3", "web_server.py"])
 
 # Stream audio to client.
-subprocess.Popen(["python3", "audio_stream_server.py", 16000])
+subprocess.Popen(["python3", "audio_stream_server.py", "16000"])
 
 # Receive audio from client.
-subprocess.Popen(["python3", "audio_stream_client.py", CLIENT_IP, PORT, 44100])
+subprocess.Popen(["python3", "audio_stream_client.py", CLIENT_IP, PORT, "44100"])
 
 while(True):
     pass
