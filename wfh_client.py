@@ -10,10 +10,10 @@ PORT = 4445
 os.system("touch .audio.bot.pause")
 
 # Stream audio to robot.
-subprocess.Popen(["python3", "audio_stream_server.py"], "44100")
+subprocess.Popen(["python3", "audio_stream_server.py"], 44100)
 
 # Receive audio from robot.
-subprocess.Popen(["python3", "audio_stream_client.py"], ROBOT_IP, PORT, "16000")
+subprocess.Popen(["python3", "audio_stream_client.py"], ROBOT_IP, PORT, 16000)
 
 while(True):
     pass
