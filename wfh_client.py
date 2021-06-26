@@ -3,7 +3,8 @@ import os
 
 
 ROBOT_IP = "192.168.1.177"
-PORT = 4445
+PORT = "4445"
+DEVICE_ID = "1"
 
 
 # Initially, mute auto coming from client.
@@ -13,7 +14,7 @@ os.system("touch .audio.bot.pause")
 subprocess.Popen(["python3", "audio_stream_server.py", "44100"])
 
 # Receive audio from robot.
-subprocess.Popen(["python3", "audio_stream_client.py", ROBOT_IP, PORT, "16000"])
+subprocess.Popen(["python3", "audio_stream_client.py", ROBOT_IP, PORT, DEVICE_ID, "16000"])
 
 while(True):
     pass
