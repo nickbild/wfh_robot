@@ -4,7 +4,7 @@ import sys
 
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
-RATE = sys.argv[3]
+RATE = int(sys.argv[3])
 CHUNK = 512
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

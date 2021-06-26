@@ -7,7 +7,7 @@ import sys
 
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
-RATE = sys.argv[1] # 44100, 16000
+RATE = int(sys.argv[1]) # 44100, 16000
 CHUNK = 512
 PAUSEFILE = '.audio.bot.pause'
 
