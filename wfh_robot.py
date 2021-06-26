@@ -3,7 +3,8 @@ import os
 
 
 CLIENT_IP = "192.168.1.113"
-PORT = "4445"
+ROBOT_PORT = "4446"
+CLIENT_PORT = "4447"
 DEVICE_ID = "2"
 
 
@@ -17,10 +18,10 @@ subprocess.Popen(["python3", "image_capture_loop.py"])
 subprocess.Popen(["python3", "web_server.py"])
 
 # Stream audio to client.
-subprocess.Popen(["python3", "audio_stream_server.py", "16000"])
+subprocess.Popen(["python3", "audio_stream_server.py", "16000", ROBOT_PORT])
 
 # Receive audio from client.
-subprocess.Popen(["python3", "audio_stream_client.py", CLIENT_IP, PORT, DEVICE_ID, "44100"])
+subprocess.Popen(["python3", "audio_stream_client.py", CLIENT_IP, CLIENT_PORT, DEVICE_ID, "44100"])
 
 while(True):
     pass

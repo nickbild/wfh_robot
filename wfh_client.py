@@ -3,7 +3,8 @@ import os
 
 
 ROBOT_IP = "192.168.1.177"
-PORT = "4445"
+ROBOT_PORT = "4446"
+CLIENT_PORT = "4447"
 DEVICE_ID = "1"
 
 
@@ -11,10 +12,10 @@ DEVICE_ID = "1"
 os.system("touch .audio.bot.pause")
 
 # Stream audio to robot.
-subprocess.Popen(["python3", "audio_stream_server.py", "44100"])
+subprocess.Popen(["python3", "audio_stream_server.py", "44100", CLIENT_PORT])
 
 # Receive audio from robot.
-subprocess.Popen(["python3", "audio_stream_client.py", ROBOT_IP, PORT, DEVICE_ID, "16000"])
+subprocess.Popen(["python3", "audio_stream_client.py", ROBOT_IP, ROBOT_PORT, DEVICE_ID, "16000"])
 
 while(True):
     pass

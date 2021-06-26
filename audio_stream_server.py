@@ -14,7 +14,7 @@ PAUSEFILE = '.audio.bot.pause'
 audio = pyaudio.PyAudio()
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-serversocket.bind(('', 4445))
+serversocket.bind(('', int(sys.argv[2])))
 serversocket.listen(5)
 
 
