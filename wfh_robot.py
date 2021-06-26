@@ -3,7 +3,7 @@ import os
 
 
 CLIENT_IP = "192.168.1.113"
-PORT = 4445
+PORT = "4445"
 DEVICE_ID = "2"
 
 
