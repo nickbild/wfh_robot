@@ -10,7 +10,7 @@ DEVICE_ID = "2"
 
 
 # Crank up the volume.
-os.system("amixer -c 3 cset numid=6 30,30")
+os.system("amixer -c 2 cset numid=6 30,30")
 
 # Initially, make sure robot is NOT muted.
 os.system("rm -f .audio.bot.pause")
