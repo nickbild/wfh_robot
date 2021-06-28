@@ -34,7 +34,7 @@ The brains:
 - 1 x Raspberry Pi 3 B+
 - USB webcam with microphone
 - 3.5mm jack to USB audio adapter
-- Speaker (3.5mm jack) input
+- Speaker (3.5mm jack input)
 
 ## About the Author
 
