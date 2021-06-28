@@ -8,6 +8,10 @@ Have you enjoyed working from home recently, but now the boss wants you back in 
 
 ## How It Works
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/wfh_bot.jpg">
+</p>
+
 ## Media
 
 ## Bill of Materials
