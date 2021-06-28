@@ -12,7 +12,7 @@ The ultra-realistic WFH Bot is strategically positioned at your desk in your wor
 
 WFH Bot transmits both audio and video that it "hears" and "sees" over the Internet to your home office.  You can watch this stream from your home office, and when needed, you can talk through your computer, and WFH Bot will speak.
 
-To make this work, WFH Bot is equipped with a Rapberry Pi 3, a webcam, a microphone, and a speaker.  The robot runs [this script](https://github.com/nickbild/wfh_robot/blob/main/wfh_robot.py), and the client runs [this one](https://github.com/nickbild/wfh_robot/blob/main/wfh_client.py).
+To make this work, WFH Bot is equipped with a Rapberry Pi 4, a webcam, a microphone, and a speaker.  The robot runs [this script](https://github.com/nickbild/wfh_robot/blob/main/wfh_robot.py), and the client runs [this one](https://github.com/nickbild/wfh_robot/blob/main/wfh_client.py).
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/wfh_bot.jpg">
@@ -34,7 +34,7 @@ The brains:
 
 ## Bill of Materials
 
-- 1 x Raspberry Pi 3 B+
+- 1 x Raspberry Pi 4
 - USB webcam with microphone
 - 3.5mm jack to USB audio adapter
 - Speaker (3.5mm jack input)
