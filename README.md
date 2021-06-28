@@ -23,13 +23,18 @@ To make this work, WFH Bot is equipped with a Rapberry Pi 3, a webcam, a microph
 Not at all creepy:
 ![Face](https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/face_close_sm.jpg)
 
-Upper body:
+Upper body (still not creepy):
 ![Upper body](https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/upper_body_sm.jpg)
 
 The brains:
 ![Hardware](https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/hardware_sm.jpg)
 
 ## Bill of Materials
+
+- 1 x Raspberry Pi 3 B+
+- USB webcam with microphone
+- 3.5mm jack to USB audio adapter
+- Speaker (3.5mm jack) input
 
 ## About the Author
 
