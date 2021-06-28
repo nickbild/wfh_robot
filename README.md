@@ -20,6 +20,9 @@ To make this work, WFH Bot is equipped with a Rapberry Pi 3, a webcam, a microph
 
 ## Media
 
+YouTube:
+https://www.youtube.com/watch?v=t5GhmYrT3l0
+
 Not at all creepy:
 ![Face](https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/face_close_sm.jpg)
 
