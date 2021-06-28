@@ -24,7 +24,7 @@ Not at all creepy:
 ![Face](https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/face_close_sm.jpg)
 
 Upper body:
-![Upper body](https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/face_close_sm.jpg)
+![Upper body](https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/upper_body_sm.jpg)
 
 The brains:
 ![Hardware](https://raw.githubusercontent.com/nickbild/wfh_robot/main/media/hardware_sm.jpg)
