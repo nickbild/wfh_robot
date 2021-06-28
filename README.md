@@ -35,6 +35,7 @@ The brains:
 - USB webcam with microphone
 - 3.5mm jack to USB audio adapter
 - Speaker (3.5mm jack input)
+- Clothes, towels, mask, wig, etc.
 
 ## About the Author
 
